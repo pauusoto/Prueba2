@@ -1,0 +1,23 @@
+﻿<Controls:MetroWindow x:Class="Vista.Menu"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Vista"
+        mc:Ignorable="d"
+        xmlns:i="http://schemas.microsoft.com/expression/2010/interactivity"
+        xmlns:behaviours="clr-namespace:MahApps.Metro.Behaviours;assembly=MahApps.Metro"
+        xmlns:Controls="clr-namespace:MahApps.Metro.Controls;assembly=MahApps.Metro"
+        Title="                                 MENÚ" Height="460" Width="332.949" WindowStartupLocation="CenterScreen">
+    <Grid>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="54*"/>
+            <ColumnDefinition Width="271*"/>
+        </Grid.ColumnDefinitions>
+        <Button x:Name="btnAdministracionClientes" Content="Button" HorizontalAlignment="Left" Height="105" Margin="39,96,0,0" VerticalAlignment="Top" Width="105" BorderBrush="White" Background="#FFE4D327" Grid.ColumnSpan="2"/>
+        <Button x:Name="btnListadoContratos" Content="Button" HorizontalAlignment="Left" Height="105" Margin="119.772,233,0,0" VerticalAlignment="Top" Width="105" Background="#FFE4D327" BorderBrush="White" Grid.Column="1"/>
+        <Button x:Name="btnContratos" Content="Button" HorizontalAlignment="Left" Height="105" Margin="39,233,0,0" VerticalAlignment="Top" Width="105" Background="#FFE4D327" BorderBrush="White" Grid.ColumnSpan="2"/>
+        <Button x:Name="btnListadoClientes" Content="Button" HorizontalAlignment="Left" Height="105" Margin="119.772,96,0,0" VerticalAlignment="Top" Width="105" Background="#FFE4D327" BorderBrush="White" Grid.Column="1"/>
+
+    </Grid>
+</Controls:MetroWindow>

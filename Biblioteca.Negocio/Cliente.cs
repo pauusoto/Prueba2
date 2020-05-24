@@ -4,9 +4,9 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace Biblioteca.DALC
+namespace Biblioteca.Negocio
 {
-    public class Class1
+    class Cliente
     {
     }
 }

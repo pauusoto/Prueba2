@@ -1,0 +1,53 @@
+﻿<Controls:MetroWindow x:Class="Vista.AdmiContratos"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Vista"
+        mc:Ignorable="d"
+        xmlns:i="http://schemas.microsoft.com/expression/2010/interactivity"
+        xmlns:behaviours="clr-namespace:MahApps.Metro.Behaviours;assembly=MahApps.Metro"
+        xmlns:Controls="clr-namespace:MahApps.Metro.Controls;assembly=MahApps.Metro"              
+        Title="                                 ADMINISTRACIÓN DE CONTRATOS" Height="518.049" Width="823.171">
+    <Grid>
+        <Label Content="Número" HorizontalAlignment="Left" Height="35" Margin="37,70,0,0" VerticalAlignment="Top" Width="76" FontFamily="Microsoft JhengHei" FontSize="14" FontWeight="Bold"/>
+        <Label Content="Rut" HorizontalAlignment="Left" Height="40" Margin="37,110,0,0" VerticalAlignment="Top" Width="52" FontFamily="Microsoft JhengHei" FontSize="14" FontWeight="Bold"/>
+        <Label Content="Tipo de Evento" HorizontalAlignment="Left" Height="27" Margin="37,157,0,0" VerticalAlignment="Top" Width="118" FontFamily="Microsoft JhengHei" FontSize="14" FontWeight="Bold"/>
+        <Label Content="Asistentes" HorizontalAlignment="Left" Height="32" Margin="37,211,0,0" VerticalAlignment="Top" Width="87" FontFamily="Microsoft JhengHei" FontSize="14" FontWeight="Bold"/>
+        <Label Content="Fecha y Hora Inicio" HorizontalAlignment="Left" Height="26" Margin="53,266,0,0" VerticalAlignment="Top" Width="141" FontFamily="Microsoft JhengHei" FontSize="14" FontWeight="Bold"/>
+        <Label Content="Fecha y Hora Termino" HorizontalAlignment="Left" Height="36" Margin="231,266,0,0" VerticalAlignment="Top" Width="164" FontFamily="Microsoft JhengHei" FontSize="14" FontWeight="Bold"/>
+        <Label Content="Fecha Creación" HorizontalAlignment="Left" Height="35" Margin="382,70,0,0" VerticalAlignment="Top" Width="120" FontFamily="Microsoft JhengHei" FontSize="14" FontWeight="Bold"/>
+        <Label Content="Modalidad Servicio" HorizontalAlignment="Left" Height="37" Margin="285,157,0,0" VerticalAlignment="Top" Width="159" FontFamily="Microsoft JhengHei" FontSize="14" FontWeight="Bold"/>
+        <Label Content="Personal" HorizontalAlignment="Left" Height="31" Margin="193,213,0,0" VerticalAlignment="Top" Width="75" FontFamily="Microsoft JhengHei" FontSize="14" FontWeight="Bold"/>
+        <Label Content="Personal Adicional" HorizontalAlignment="Left" Height="32" Margin="328,212,0,0" VerticalAlignment="Top" Width="138" FontFamily="Microsoft JhengHei" FontSize="14" FontWeight="Bold"/>
+        <Label Content="Observaciones" HorizontalAlignment="Left" Height="36" Margin="37,325,0,0" VerticalAlignment="Top" Width="136" FontFamily="Microsoft JhengHei" FontSize="14" FontWeight="Bold"/>
+        <Label Content="Valor Base Evento" HorizontalAlignment="Left" Height="33" Margin="441,266,0,0" VerticalAlignment="Top" Width="147" FontFamily="Microsoft JhengHei" FontSize="14" FontWeight="Bold"/>
+        <Label Content="Valor por Asistente" HorizontalAlignment="Left" Height="26" Margin="441,299,0,0" VerticalAlignment="Top" Width="147" FontFamily="Microsoft JhengHei" FontSize="14" FontWeight="Bold"/>
+        <Label Content="Valor Personal Adicional" HorizontalAlignment="Left" Height="26" Margin="441,335,0,0" VerticalAlignment="Top" Width="175" FontFamily="Microsoft JhengHei" FontSize="14" FontWeight="Bold"/>
+        <Label Content="Valor Total del Evento" HorizontalAlignment="Left" Height="37" Margin="441,366,0,0" VerticalAlignment="Top" Width="168" FontFamily="Microsoft JhengHei" FontSize="14" FontWeight="Bold"/>
+        <Label x:Name="lblNroContrato" Content="Número Contrato" HorizontalAlignment="Left" Height="25" Margin="113,70,0,0" VerticalAlignment="Top" Width="118" Background="#FF5DBBD6"/>
+        <Label x:Name="lblFechaCreacion" Content="Fecha de hoy" HorizontalAlignment="Left" Height="25" Margin="507,70,0,0" VerticalAlignment="Top" Width="102"/>
+        <Label Content="Razón social del cliente seleccionado" HorizontalAlignment="Left" Height="25" Margin="405,113,0,0" VerticalAlignment="Top" Width="260" Background="#FF5DBBD6"/>
+        <TextBox x:Name="txtRut" HorizontalAlignment="Left" Height="25" Margin="94,112,0,0" TextWrapping="Wrap"  VerticalAlignment="Top" Width="123"/>
+        <ComboBox x:Name="cboTipoEvento" HorizontalAlignment="Left" Height="27" Margin="173,157,0,0" VerticalAlignment="Top" Width="107"/>
+        <ComboBox x:Name="cboModalidad" HorizontalAlignment="Left" Height="26" Margin="446,158,0,0" VerticalAlignment="Top" Width="122"/>
+        <TextBox x:Name="txtAsistentes" HorizontalAlignment="Left" Height="31" Margin="129,212,0,0" TextWrapping="Wrap"  VerticalAlignment="Top" Width="44"/>
+        <Label x:Name="lblNroPersonal" Content="" HorizontalAlignment="Left" Height="31" Margin="275,214,0,0" VerticalAlignment="Top" Width="48" Background="#FF5DBBD6"/>
+        <TextBox x:Name="txtNroPersonalAdicional" HorizontalAlignment="Left" Height="31" Margin="466,212,0,0" TextWrapping="Wrap"  VerticalAlignment="Top" Width="62"/>
+        <DatePicker x:Name="dtpInicio" HorizontalAlignment="Left" Height="23" Margin="64,302,0,0" VerticalAlignment="Top" Width="130"/>
+        <DatePicker x:Name="dtpTermino" HorizontalAlignment="Left" Height="26" Margin="245,302,0,0" VerticalAlignment="Top" Width="147"/>
+        <TextBox x:Name="txtObservaciones" HorizontalAlignment="Left" Height="71" Margin="64,361,0,0" TextWrapping="Wrap"  VerticalAlignment="Top" Width="199"/>
+        <Label x:Name="lblValorBase" Content="$$" HorizontalAlignment="Left" Height="26" Margin="631,273,0,0" VerticalAlignment="Top" Width="103" Background="#FF5DBBD6"/>
+        <Label x:Name="lblValorPorAsistente" Content="$$" HorizontalAlignment="Left" Height="26" Margin="631,304,0,0" VerticalAlignment="Top" Width="103" Background="#FF5DBBD6"/>
+        <Label x:Name="lblPersonalAdicional" Content="$$" HorizontalAlignment="Left" Height="26" Margin="631,335,0,0" VerticalAlignment="Top" Width="103" Background="#FF5DBBD6"/>
+        <Label x:Name="lblValorTotal" Content="$$" HorizontalAlignment="Left" Height="23" Margin="616,366,0,0" VerticalAlignment="Top" Width="135" Background="#FF005066" Foreground="White"/>
+        <Button x:Name="btnBuscarContrato" Content="BUSCAR CONTRATO" HorizontalAlignment="Left" Height="25" Margin="231,70,0,0" VerticalAlignment="Top" Width="144" Background="#FF40CBFF"/>
+        <Button x:Name="btnBuscarCliente" Content="BUSCAR CLIENTE" HorizontalAlignment="Left" Height="25" Margin="217,113,0,0" VerticalAlignment="Top" Width="130" Background="#FF40CBFF"/>
+        <Button Content="CREAR" HorizontalAlignment="Left" Height="74" Margin="687,186,0,0" VerticalAlignment="Top" Width="74" Background="#FFE4D327"/>
+        <Button Content="BUSCAR" HorizontalAlignment="Left" Height="74" Margin="687,87,0,0" VerticalAlignment="Top" Width="74" Background="#FFE4D327"/>
+        <Button Content="ACTUALIZAR" HorizontalAlignment="Left" Height="42" Margin="504,417,0,0" VerticalAlignment="Top" Width="105" Background="#FFE4D327"/>
+        <Button Content="LISTAR CONTRATOS" HorizontalAlignment="Left" Height="42" Margin="292,417,0,0" VerticalAlignment="Top" Width="174" Background="#FFE4D327"/>
+        <Button Content="TERMINO" HorizontalAlignment="Left" Height="42" Margin="655,417,0,0" VerticalAlignment="Top" Width="79" Background="#FFE4D327"/>
+
+    </Grid>
+</Controls:MetroWindow>
