@@ -25,5 +25,30 @@ namespace Vista
         {
             InitializeComponent();
         }
+
+        private void BtnAdministracionClientes_Click(object sender, RoutedEventArgs e)
+        {
+            AdmiClientes admi = new AdmiClientes();
+            admi.Show();
+        }
+
+        private void BtnListadoClientes_Click(object sender, RoutedEventArgs e)
+        {
+            ListaClientes lista_clientes = new ListaClientes();
+            lista_clientes.Show();
+        }
+
+        private void BtnContratos_Click(object sender, RoutedEventArgs e)
+        {
+            AdmiContratos admiCon = new AdmiContratos();
+            admiCon.Show();
+
+        }
+
+        private void BtnListadoContratos_Click(object sender, RoutedEventArgs e)
+        {
+            ListaContratos lista_contra = new ListaContratos();
+            lista_contra.Show();
+        }
     }
 }
